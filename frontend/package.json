@@ -1,0 +1,8 @@
+{
+  "name":"movie-booking-frontend",
+  "private":true,
+  "version":"1.0.0",
+  "scripts":{"start":"vite","build":"vite build"},
+  "dependencies":{"@vitejs/plugin-react":"latest","axios":"latest","react":"latest","react-dom":"latest","react-router-dom":"latest"},
+  "devDependencies":{"vite":"latest"}
+}
