@@ -30,3 +30,8 @@ build/
 # OS
 .DS_Store
 Thumbs.db
+
+
+
+# Database backups
+database/*.sql
