@@ -15,12 +15,14 @@ SECRET_KEY = os.getenv(
     "django-insecure-change-this-secret-key"
 )
 
-DEBUG = os.getenv("DEBUG", "True").lower() == "true"
-
+DEBUG = os.getenv("DEBUG", "False").lower() == "true"
 ALLOWED_HOSTS = [
     "127.0.0.1",
     "localhost",
 ]
+
+if os.getenv("RENDER_EXTERNAL_HOSTNAME"):
+    ALLOWED_HOSTS.append(os.getenv("RENDER_EXTERNAL_HOSTNAME"))
 
 
 INSTALLED_APPS = [
